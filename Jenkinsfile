@@ -5,7 +5,7 @@ pipeline {
     docker {
       image 'dimav47/buildtools'
       args  '-v /var/run/docker.sock:/var/run/docker.sock -u 0:0'
-      
+      registryCredentialsId 'fdb54f96-c857-4a66-b6e2-fc0e8064b437'
     }
   }
   
